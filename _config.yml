@@ -1,59 +1,21 @@
-# Build settings
-gems:
-  - jemoji
-  - jekyll-paginate
-
 # Site settings
-title: "Mediator"
-description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
-
-email: a-mail@mail.mail
-#blog logo
-logo: "/assets/images/df_logo.jpg"
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
-
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
-author_image: "/assets/images/author.jpg"
-
-paginate:	5
-
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+title: Math.random()
+header-img: img/home-bg.jpg
+email: ggrau@me.com
+copyright_name: Guillermo Grau Panea
+description: "Random thoughts on software development and engineering"
 baseurl: ""
-#used to display twitter cards
-twitter_handle: '@dirkfabisch'
+url: "https://guigrpa.github.io"
+twitter_username: guiroppa
+github_username:  guigrpa
+# facebook_username: 
+email_username:  ggrau@me.com
 
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/dirkfabisch
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+gems: [jekyll-paginate, jekyll-feed]
