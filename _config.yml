@@ -10,9 +10,9 @@ description: > # this means to ignore newlines until "email:"
 
 email: a-mail@mail.mail
 #blog logo
-logo: "/test-jekyll/assets/images/df_logo.jpg"
+logo: "/assets/images/df_logo.jpg"
 # blog cover
-cover: "/test-jekyll/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
 name: 'Dirk Fabisch'
 author: 'Dirk Fabisch'
@@ -21,7 +21,7 @@ author_image: "/assets/images/author.jpg"
 paginate:	5
 
 url: "http://myblog.***.***" # the base hostname & protocol for your site
-baseurl: "/test-jekyll"
+baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
 
