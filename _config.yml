@@ -3,12 +3,14 @@ title: Math.random()
 header-img: img/home-bg.jpg
 email: ggrau@me.com
 copyright_name: Guillermo Grau Panea
-description: "Random thoughts on software development and engineering"
+description: Random thoughts on software development and engineering
 baseurl: ""
-url: "https://guigrpa.github.io"
+url: https://guigrpa.github.io
 twitter_username: guiroppa
 github_username:  guigrpa
 # facebook_username: 
+# medium_username:
+linkedin_username:  guillermograu
 email_username:  ggrau@me.com
 
 # Build settings
@@ -16,6 +18,14 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: 
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+  - private
 
-gems: [jekyll-paginate, jekyll-feed]
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
