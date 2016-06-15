@@ -7,7 +7,7 @@ author:     "Guillermo Grau"
 header-img: "img/02.jpg"
 ---
 
-We've read the posts, watched the videos, understood the concepts. Immutability can be really useful in many scenarios; some examples:
+We've read [the](http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript) [posts](http://redux.js.org/docs/introduction/ThreePrinciples.html), watched the [videos](https://youtu.be/I7IdS-PbEgI), understood the [concepts](https://en.wikipedia.org/wiki/Immutable_object). Immutability can be really useful in many scenarios; some examples:
 
 * We perform some lengthy computations on data and want to memoize the results, reusing them until inputs change.
 
