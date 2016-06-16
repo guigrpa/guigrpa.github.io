@@ -42,9 +42,15 @@ layout: default
                     {% endif %}
                 </ul>
 
+                {% if page.comments %}
+                <hr>
+                {% include comments.html %}
+                {% endif %}
+
             </div>
         </div>
     </div>
 </article>
 
 <hr>
+
