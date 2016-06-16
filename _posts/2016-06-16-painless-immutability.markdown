@@ -2,7 +2,7 @@
 layout:     post
 title:      "Painless immutability"
 subtitle:   "A trade-off comparison of Immutable.js, Seamless-immutable and Timm"
-date:       2016-06-12 12:00:00
+date:       2016-06-16 12:00:00
 author:     "Guillermo Grau"
 header-img: "img/02.jpg"
 comments:   true
