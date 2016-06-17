@@ -1,3 +1,3 @@
-Visit this blog at https//guigrpa.github.io.
+Visit this blog at [http://guigrpa.github.io/](http://guigrpa.github.io/).
 
 Theme based on [Clean Blog, by Start Bootstrap](http://startbootstrap.com/).
