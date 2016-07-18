@@ -14,9 +14,9 @@ OK, so it might not look like the most sexy subject to blog about. When you are 
 
 The fact is: sooner or later, just as with testing, you will *need* to give it some thought. In a typical client-server web application, you will start having concurrent sessions. And even at the client side, where you have only one user, simultaneous actions will start making your logs less and less readable. Debugging, or just grasping what's going on, can quickly turn into a nightmare if you don't take the necessary precautions.
 
-Even if you are not developing a web app, you may be overwhelmed by your logs. In my current project, I'm developing a Node-only application with multiple bidirectional interfaces (an interactive SSH session, a proprietary TCP link, an interactive CLI conversation with the user), all of them generating events like crazy.
+Even if you're not building a web app, you may be overwhelmed by your logs. In my current project, I'm developing a Node-only application with multiple bidirectional interfaces (an interactive SSH session, a proprietary TCP link, an interactive CLI conversation with the user), all of them generating events like crazy.
 
-In an ideal world, I'd like to have an easy-to-use library that would let me filter logs by relevance or source module, attach objects, group them hierarchically in stories ("John clicks on Buy" + "Goes to check-out" ⊂ "John visits the store"), persist them to a file/database, send them to a separate process for trend analysis… The icing on the cake? I'd love to see what's happening at the client and the server *in a single place* (how about a Chrome DevTools extension?).
+In an ideal world, I'd like to have an easy-to-use library that would let me filter logs by relevance or source module, attach objects, group them hierarchically in stories ("John clicks on Buy" + "Goes to check-out" ⊂ "John visits the store"), persist them to a file/database, send them to a separate process for trend analysis… The icing on the cake? I'd love to see what's happening at the client and the server *in a single place* (how about a Chrome DevTools extension for that?).
 
 Well... **have you checked out [Storyboard](https://github.com/guigrpa/storyboard) yet?**
 
@@ -28,9 +28,9 @@ Well... **have you checked out [Storyboard](https://github.com/guigrpa/storyboar
 
 ## A flexible logging architecture
 
-Storyboard is based on a hub that receives messages and broadcasts them to all attached *listeners*, or *plugins*. Despite their name, listeners can also send messages to the hub, making them quite powerful.
+Storyboard is based on a hub component that receives messages and broadcasts them to all attached *listeners*, or *plugins*. Despite their name, listeners can also send messages to the hub, making them quite powerful.
 
-Let's say we have a typical client-server application. You could configure the isomorphic Storyboard library like this for development:
+Let's say we have a typical client-server application. You could configure the isomorphic Storyboard library like this for development (legend at the bottom):
 
 <a href="{{ site.baseurl }}/img/sb-typical-arch.png">
     <img src="{{ site.baseurl }}/img/sb-typical-arch.png" alt="Storyboard logging config for a client-server application">
@@ -53,7 +53,7 @@ In some cases, you might not be able to include Storyboard in your existing proj
 
 This even works with a shell! Just try `sb --server bash` and you're instantly sharing your shell session with others via HTTP.
 
-As a final example, here is a Storyboard configuration with support for mobile clients. In this case, the WebSocket client is configured with `uploadClientStories: true`. Uploaded stories will not pollute the server's logs written to console or file, but they will get saved to the database for postprocessing, and re-broadcast to other clients with the Storyboard DevTools extension.
+As a final example, here is a Storyboard configuration with support for mobile clients. In this case, the WebSocket client is configured with `uploadClientStories: true`. Uploaded stories will not pollute the server's logs as they are written to console or file, but they will get saved to the database for postprocessing, and re-broadcast to other clients with the Storyboard DevTools extension.
 
 <a href="{{ site.baseurl }}/img/sb-mobile.png">
     <img src="{{ site.baseurl }}/img/sb-mobile.png" alt="Logging configuration including upload of mobile client logs">
