@@ -8,7 +8,7 @@ header-img: "img/02.jpg"
 comments:   true
 ---
 
-_**TL;DR**&nbsp;&nbsp;&nbsp;With the popularity of Immutable.js and Seamless-immutable going through the roof, who needs yet another immutability library? Maybe you, if you **don't want to lock read access to your data through a non-native API, need reasonable write performance and an easy-to-use API**. That's exactly the balance [Timm](https://github.com/guigrpa/timm) tries to strike._
+**_TL;DR_ &nbsp;&nbsp;&nbsp;With the popularity of Immutable.js and Seamless-immutable going through the roof, who needs yet another immutability library? Maybe you, if you _don't want to lock read access to your data through a non-native API, need reasonable write performance and an easy-to-use API_. That's exactly the balance [Timm](https://github.com/guigrpa/timm) tries to strike.**
 
 We've read [the](http://jlongster.com/Using-Immutable-Data-Structures-in-JavaScript) [posts](http://redux.js.org/docs/introduction/ThreePrinciples.html), watched the [videos](https://youtu.be/I7IdS-PbEgI), understood the [concepts](https://en.wikipedia.org/wiki/Immutable_object). Immutability can be really useful in many scenarios; for example:
 
