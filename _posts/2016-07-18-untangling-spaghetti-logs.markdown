@@ -8,7 +8,7 @@ header-img: "img/04-books.jpg"
 comments:   true
 ---
 
-**_TL;DR_ &nbsp;&nbsp;&nbsp;Logging might not be super-exciting, but when you hit your head against a wall during debugging, you sometimes wish you'd used better tools. [Storyboard 2.0](https://github.com/guigrpa/storyboard) has just been released and provides a flexible architecture, a powerful feature set and a novel approach to ~~storytelling~~ logging.**
+**_TL;DR_ &nbsp;&nbsp;&nbsp;Logging might not be super-exciting, but when you hit your head against a wall during debugging, you sometimes wish you'd used better tools. [Storyboard 2.0](https://github.com/guigrpa/storyboard) has just been [released](https://github.com/guigrpa/storyboard/blob/master/CHANGELOG.md) and provides a flexible architecture, a powerful feature set and a novel approach to ~~storytelling~~ logging.**
 
 OK, so it might not look like the most sexy subject to blog about. When you are building the most exciting new application, why would you even *want* to think about logging and not just… go out play Pokémon?
 
