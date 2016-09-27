@@ -10,13 +10,13 @@ comments:   true
 
 **_TL;DR_ &nbsp;&nbsp;&nbsp;If you're not testing your React (Native) components at all, or are relying on insufficient, high-level smoke tests, you're not alone. Writing those unit tests must be one of the less rewarding experiences for a developer. But wait: *snapshots to the rescue!* [Jest](https://facebook.github.io/jest/)'s newest release features snapshot testing – and might well change your mind.**
 
-The latest release of [Jest](https://facebook.github.io/jest/) has caused quite a stir, and understandably so: its [**snapshot testing**](https://facebook.github.io/jest/docs/tutorial-react.html#snapshot-testing) feature alone is something of a mind-bender. If you're like me, maybe you didn't write unit tests for your React (Native) components for a number of valid reasons:
+[Jest](https://facebook.github.io/jest/)'s latest release has caused quite a stir, and understandably so: its [**snapshot testing**](https://facebook.github.io/jest/docs/tutorial-react.html#snapshot-testing) feature alone is something of a mind-bender. If you're like me, maybe you didn't write unit tests for your React (Native) components for a number of valid reasons:
 
 * *"They're hard to write"*
 * *"They're brittle"*
 * *"They don't bring so much value if you have at least some integration tests"*
 
-With the latest releases of Jest, though, you may need to revisit those arguments. Snapshots are trivial to use, they can easily be updated, and they provide full coverage of your components, dynamic behavior included. How do they work? Even that can be explained in just two bullets:
+Starting with Jest 14, though, you may need to revisit those arguments. Snapshots are trivial to use, they can easily be updated, and they provide full coverage of your components, dynamic behavior included. How do they work? Even that can be explained in just two bullets:
 
 1. The first time your test renders a component, a snapshot is taken and saved to a file.
 2. Upon re-run, the new render is diffed against the snapshot. If there's a mismatch, you choose which one to keep (and maybe correct your application).
