@@ -89,7 +89,7 @@ jest.mock('../translation', () => jest.fn((props) =>
 ));
 ```
 
-Notice how we include in the snapshot the props passed down to the mock: `{...props}`. I also include a `dataMockType` attribute, which I found useful for easily identifying mocked components in the snapshot.
+Notice how we manage to include in the snapshot the props that are being passed down: `{...props}`. Notice also the `dataMockType` attribute, which I found useful for easily identifying mocked components in the snapshot.
 
 Now, one of the actual unit tests may look like this:
 
@@ -116,7 +116,7 @@ it('renders correctly a message with translations', () => {
 });
 ```
 
-If we look at the stored snapshot, we will see that an empty `div` was correctly instantiated for each translation, together with the correct props:
+If we look at the stored snapshot, we'll see that an empty `div` was correctly instantiated for each translation, together with the correct props:
 
 ```
 ...
@@ -148,7 +148,7 @@ If we look at the stored snapshot, we will see that an empty `div` was correctly
 
 ## Snapshotting Relay containers
 
-In the real application, `TranslatorRow` is a Relay container, so it expects to be passed a `relay` prop. Now, the Relay Higher-Order Component (HOC) lives outside our application and we may not even know the full shape of the `relay` prop.
+In the real application, `TranslatorRow` is a Relay container, so it expects to be passed a `relay` prop. Now, the Relay Higher-Order Component (HOC) lives outside our application and we may not even know the full shape of that prop.
 
 I found it more straightforward to just leave the HOC out of our unit test. For this purpose, our default export in `translatorRow.js` is the wrapped `TranslatorRow`, but we also expose the unwrapped version as a named export.
 
@@ -176,7 +176,7 @@ export default Relay.createContainer(TranslatorRow, { fragments });
 export { TranslatorRow as _TranslatorRow };  // just for unit tests!
 ```
 
-The snapshot test will be exactly as before, except that we now need to use the named export and conform to Relay's connection specs:
+The snapshot test and the saved snapshot file will be exactly as before, except that we now need to use the named export and conform to Relay's connection specs:
 
 ```js
 import { _TranslatorRow as TranslatorRow } from '../translatorRow';
