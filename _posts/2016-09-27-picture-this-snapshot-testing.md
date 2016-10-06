@@ -74,8 +74,8 @@ Note: with the current version of React, [you may need to add this](https://gith
 
 Now let's test a slightly more complicated component. Mady's `TranslatorRow` renders the original message to be translated, as well as several translations. But the translations themselves, which are editable, are handled by a child `Translation` component.
 
-<a href="{{ site.baseurl }}/img/mady.png">
-    <img src="{{ site.baseurl }}/img/mady.png" alt="Mady's components in action">
+<a href="{{ site.baseurl }}/img/mady.jpg">
+    <img src="{{ site.baseurl }}/img/mady.jpg" alt="Mady's components in action">
 </a>
 <span class="caption text-muted">Mady's `Header` and `TranslatorRow` components in action</span>
 
