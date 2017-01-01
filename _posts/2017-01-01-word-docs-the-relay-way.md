@@ -8,7 +8,7 @@ header-img: "img/06-bridge.jpg"
 comments:   true
 ---
 
-**_TL;DR_ &nbsp;&nbsp;&nbsp;Sometimes you have to set aside your developer work and do some office stuff. And sometimes that includes generating Word reports with dynamic contents. What if you could bridge Word, GraphQL and JavaScript to help you with these chores?**
+**_TL;DR_ &nbsp;&nbsp;&nbsp;Sometimes you have to set aside your developer work and do some office stuff. And sometimes that includes generating Word reports with dynamic contents. What if you could bridge Word, GraphQL and JavaScript to help you with these chores? [docx-templates](https://github.com/guigrpa/docx-templates) helps you do exactly that.**
 
 Every once in a while you need to produce a Microsoft Word document with dynamic contents. Maybe it's a project report, or the boring economic section of a tender. Chances are you're working within a team, and you absolutely need your document to be in the *de facto* standard for non-nerdy output: Word.
 
