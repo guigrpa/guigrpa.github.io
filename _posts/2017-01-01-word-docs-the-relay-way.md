@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Word documents, <i>the Relay way</i>™"
+title:      "Word documents, <i>The Relay Way</i>™"
 subtitle:   "Bridging Word templates, GraphQL queries and JavaScript snippets"
 date:       2017-01-01 02:00:00
 author:     "Guillermo Grau"
