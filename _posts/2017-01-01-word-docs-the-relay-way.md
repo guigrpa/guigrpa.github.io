@@ -2,7 +2,7 @@
 layout:     post
 title:      "Word documents, <i>the Relay way</i>™"
 subtitle:   "Bridging Word templates, GraphQL queries and JavaScript snippets"
-date:       2016-12-28 12:00:00
+date:       2017-01-01 02:00:00
 author:     "Guillermo Grau"
 header-img: "img/06-bridge.jpg"
 comments:   true
